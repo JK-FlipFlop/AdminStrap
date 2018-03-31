@@ -60,7 +60,7 @@
         <div class="dropdown create">
           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Create Content</button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Add Page</a>
+            <a class="dropdown-item" data-toggle="modal" data-target="#addPage" href="#">Add Page</a>
             <a class="dropdown-item" href="#">Add Post</a>
             <a class="dropdown-item" href="#">Add User</a>
           </div>
@@ -137,33 +137,46 @@
         
           </div>
 
+
+          <div class="card-header header-table main-col-bg">Latest Users</div>
           <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Joined</th>
     </tr>
   </thead>
   <tbody>
+    
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>Mark Otto</td>
+      <td>motto@gmail.com</td>
+      <td>Jan 12 2018</td>
     </tr>
+    
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>Jacob Thornton</td>
+      <td>jacob12@yahoo.com</td>
+      <td>Jan 26, 2018</td>
     </tr>
+    
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>Larry Hill</td>
+      <td>hill_larry26@gmail.com</td>
+      <td>Feb 22, 2018</td>
+    </tr>
+
+    <tr>
+      <td>JB Billings</td>
+      <td>jaybilli@hotmail.com</td>
+      <td>Feb 27, 2018</td>
+    </tr>
+
+    <tr>
+      <td>Adam Apple</td>
+      <td>appleboy@gmail.com</td>
+      <td>Mar 3, 2018</td>
     </tr>
   </tbody>
 </table>
@@ -175,6 +188,41 @@
   </div>
 </section>
 
-
+<!-- Modal -->
+<div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <form>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Page</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
 </body>
 </html>
