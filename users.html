@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminStrap|DashBoard</title>
+  <title>AdminStrap| Users</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">  
   <!--BootStrap cdn for CSS-->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
   <a class="navbar-brand" href="#">AdminStrap</a>
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">DashBoard</a>
       </li>
       <li class="nav-item">
@@ -38,7 +38,7 @@
       <li class="nav-item">
         <a class="nav-link" href="posts.html">Posts</a>
       </li>
-       <li class="nav-item">
+       <li class="nav-item active">
         <a class="nav-link" href="users.html">Users</a>
       </li>
     </ul>
@@ -57,7 +57,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10">
-        <h1><i class="fas fa-cog"></i> </span>Dashboard <small class="small">Manage Your Site</small></h1>
+        <h1><i class="fas fa-cog"></i> </span>Pages <small class="small">Manage Site Users</small></h1>
       </div>
       <div class="col-md-2">
         <div class="dropdown create">
@@ -75,9 +75,12 @@
 
 <section id="breadcrumb">
   <div class="container">
-    <ol class="breadcrumb">
-      <li class="active">Dashboard</li>
-    </ol>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Users</li>
+      </ol>
+    </nav>
   </div>
 </section>
 
@@ -92,57 +95,26 @@
           <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Users <span class="badge badge-secondary">203</span></a>
         </div>
 
-        <div class="container-well">
-          <div class="well">
-            <h4>Disk Space Used</h4> 
-            <div class="progress">
-              <div class="progress-bar bar-1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-            </div>
-            <br>
-            <h4>Bandwidth Used</h4> 
-            <div class="progress">
-              <div class="progress-bar bar-2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-            </div>
+      <div class="container-well">
+        <div class="well">
+          <h4>Disk Space Used</h4> 
+          <div class="progress">
+            <div class="progress-bar bar-1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+          <br>
+          <h4>Bandwidth Used</h4> 
+          <div class="progress">
+            <div class="progress-bar bar-2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
           </div>
         </div>
       </div>
+    </div>
       
-      <div class="col-md-9">
-          <div class="container-card">
-          <div class="col-md-14">
-          <div class="card-header main-col-bg">Dashboard Overview</div>
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title"><i class="fas fa-users"></i> 203</h2>
-                <p class="card-text">Users</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title"><i class="fas fa-list-alt"></i> 12</h2>
-                <p class="card-text">Pages</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title"><i class="fas fa-pencil-alt"></i> 33</h2>
-                <p class="card-text">Posts</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title"><i class="far fa-chart-bar"></i> 12,334</h2>
-                <p class="card-text">Visitors</p>
-              </div>
-            </div>
-          </div>
-        
-          </div>
-
-
-          <div class="card-header header-table main-col-bg">Latest Users</div>
-          <table class="table">
+    <div class="col-md-9">
+      
+          <div class="card-header main-col-bg">Users</div>
+          <div class="col-md-12">
+                     <table class="table">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -156,39 +128,43 @@
       <td>Mark Otto</td>
       <td>motto@gmail.com</td>
       <td>Jan 12 2018</td>
+      <td><button type="button" class="btn btn-light"><a href="edit.html" class="edit">Edit</a></button> <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     
     <tr>
       <td>Jacob Thornton</td>
       <td>jacob12@yahoo.com</td>
       <td>Jan 26, 2018</td>
+      <td><button type="button" class="btn btn-light"><a href="edit.html" class="edit">Edit</a></button> <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     
     <tr>
       <td>Larry Hill</td>
       <td>hill_larry26@gmail.com</td>
       <td>Feb 22, 2018</td>
+      <td><button type="button" class="btn btn-light"><a href="edit.html" class="edit">Edit</a></button> <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
 
     <tr>
       <td>JB Billings</td>
       <td>jaybilli@hotmail.com</td>
       <td>Feb 27, 2018</td>
+      <td><button type="button" class="btn btn-light"><a href="edit.html" class="edit">Edit</a></button> <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
 
     <tr>
       <td>Adam Apple</td>
       <td>appleboy@gmail.com</td>
       <td>Mar 3, 2018</td>
+      <td><button type="button" class="btn btn-light"><a href="edit.html" class="edit">Edit</a></button> <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
   </tbody>
 </table>
-        </div>
+          </div>
           
-      </div>
-
     </div>
   </div>
+</div>
 </section>
 
 <footer id="footer">

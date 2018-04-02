@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminStrap| Account</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">  
+  <!--BootStrap cdn for CSS-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!--Popper.js used for dropdown Menus-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  
+  <!--Bootstrap cdn for javascript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!--ckEditor cdn-->
+  <script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-default">
+  <a class="navbar-brand" href="#">AdminStrap</a>
+  <div class="collapse navbar-collapse">
+    
+  </div>
+</nav>
+
+<header id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Admin Area <small class="small">Account</small></h1>
+      </div>
+     
+    </div>
+  </div>
+</header>
+
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+    <div class="col-md-4 offset-md-4">
+      <form id="login" action="index.html" class="pad"> 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>    
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<script>
+      CKEDITOR.replace( 'editor1' );
+    </script>
+</body>
+</html>

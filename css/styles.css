@@ -158,6 +158,31 @@ body
   text-align: center;
 }
 
+ .edit
+{
+  color: #333;
+  text-decoration: none;
+}
+
+table a:hover
+{
+  color: #c0392b;
+  text-decoration: none; 
+}
+
+.pad
+{
+  padding: 40px;
+  
+  margin-top: 3 0px;
+}
+
+input:focus {
+   border: 1px solid #c0392b !important;
+box-shadow: 0 0 3px #c0392b  !important;
+-moz-box-shadow: 0 0 3px #c0392b  !important;
+-webkit-box-shadow: 0 0 3px #c0392b  !important;
+}
 
 
 @media (max-width: 575px) {
